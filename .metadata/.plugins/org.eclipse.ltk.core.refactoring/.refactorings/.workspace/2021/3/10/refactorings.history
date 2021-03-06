@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;Level 1/x만큼 간격이 있는 n개의 숫자(Java).txt&apos;" deleteContents="false" description="Delete resource &apos;Level 1/x만큼 간격이 있는 n개의 숫자(Java).txt&apos;" element1="/Level 1/x만큼 간격이 있는 n개의 숫자(Java).txt" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1615030957156"/>
+</session>
