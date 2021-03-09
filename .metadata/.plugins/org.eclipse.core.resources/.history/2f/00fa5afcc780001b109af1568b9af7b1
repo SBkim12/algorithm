@@ -1,0 +1,17 @@
+import java.util.Arrays;
+
+public class 문자열내림차순배치 {
+
+	public static void main(String[] args) {
+		String s = "Zbcdefg";
+		
+		String[] S = s.split("");
+		
+		Arrays.sort(S,);
+		
+		String answer = String.join("",S);
+		
+		System.out.println(answer);
+	}
+
+}
