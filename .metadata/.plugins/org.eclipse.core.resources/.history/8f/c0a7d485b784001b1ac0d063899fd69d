@@ -1,0 +1,18 @@
+
+public class asd {
+
+	public static void main(String[] args) {
+		System.out.println(getDistance(5,3));
+	}
+	
+	
+		
+		System.out.println(handX);
+		System.out.println(handY);
+		System.out.println(targetX);
+		System.out.println(targetY);
+		
+		return Math.abs( handX - targetX )+Math.abs(handY - targetY);
+	}
+
+}
