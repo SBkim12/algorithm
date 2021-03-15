@@ -1,0 +1,26 @@
+import java.util.Arrays;
+import java.util.Collections;
+
+public class 제일작은수제거하기 {
+
+	public static void main(String[] args) {
+		int[] arr = {4,3,2,1};
+		
+		int[] answer = {};
+		if(arr.length==1) {
+			answer = new int[1];
+			answer[0] = -1;
+		}else {
+			
+			Arrays.sort(arr);
+			answer = new int[arr.length-1];
+			int n=0;
+			for(int i=arr.length-1; i>0; i--) {
+				answer[n]=arr[i];
+				n++;
+			}
+		}
+		System.out.println(answer[answer.length]);
+	}
+
+}
