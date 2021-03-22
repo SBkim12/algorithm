@@ -1,0 +1,25 @@
+
+public class ½ÇÆÐÀ² {
+
+	public static void main(String[] args) {
+		int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
+		int N = 5;
+		
+		int[] answer = new int[5];
+		for(int i=0; i<stages.length; i++) {
+			for(int j=0; j<stages[i]-1; j++) {
+				if(stages[i]<N) {
+					answer[i]++;
+				}else {
+					break;
+				}
+			}
+		}
+		
+		for(int i=0; i<answer.length; i++) {
+			System.out.print(answer[i] + " ");
+		}
+
+	}
+
+}
