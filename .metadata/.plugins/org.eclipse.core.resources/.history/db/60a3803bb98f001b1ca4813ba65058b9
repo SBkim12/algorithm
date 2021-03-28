@@ -1,0 +1,95 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class 실패율 {
+
+	public static void main(String[] args) {
+		int[] stages = {2, 1, 2, 6, 2, 4, 3, 3};
+		int N = 5;
+		
+		int[] answer = new int[N];
+		int[] pass = new int[N];
+		int[] nope = new int[N];
+		for(int i=0; i<stages.length; i++) {
+			for(int j=0; j<N; j++) {
+				if(j==stages[i]-1) {
+					nope[j]++;
+				}
+				if(j<=stages[i]-1) {
+					pass[j]++;
+				}
+				
+			}
+		}
+		
+		List<Double> lst = new ArrayList<>();
+		List<Double> stage = new ArrayList<>();
+		for(int i=0; i<N; i++) {
+	//		System.out.println(nope[i]+  "/" +pass[i]);
+			if(pass[i]==0) {
+				lst.add((double)0);
+				stage.add((double)0);
+			}else {
+				lst.add(nope[i]/(double)pass[i]);
+				stage.add(nope[i]/(double)pass[i]);
+			}
+		}
+		
+		Collections.sort(lst);
+		Collections.reverse(lst);
+		
+		for(int i=0; i<N; i++) {
+			for(int j=0; j<N; j++) {
+				if(lst.get(i).compareTo(stage.get(j))==0) {
+					answer[i]=j+1;
+					break;
+				}
+			}
+			
+		}
+		
+		for(int i=1; i<N; i++) {
+			if(answer[i]==answer[i-1]) {
+				answer[i]++;
+			}
+			
+		}
+		
+		for(int i=0; i<N; i++) {
+			System.out.println(answer[i]);
+		}
+		
+		
+		
+		
+//		Map<Integer, Double> rMap = new HashMap<>();
+//		for(int i=0; i<N; i++) {
+//			rMap.put(i+1, nope[i]/(double)pass[i]);
+//		}
+//		
+//		int[] count = new int[N];
+//		for(int i=0; i<N; i++) {
+//			for(int j=0; j<N; j++) {
+//				if(i==j) {
+//					continue;
+//				}else {
+//					if(rMap.get(i)>=rMap.get(j)) {
+//						count[i]++;
+//					}
+//				}
+//				
+//			}
+//			
+//		}
+//		
+//		// 어려웡
+//		
+//		for(int i=0; i<N; i++) {
+//			System.out.println(i +  " : " +pass[i]);
+//			System.out.println(i +  " : " +nope[i]);
+//		}
+
+	}
+
+}
