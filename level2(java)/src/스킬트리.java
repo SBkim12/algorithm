@@ -5,8 +5,8 @@ public class 스킬트리 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String skill = "ACHQ";
-		String[] skill_trees = {"ABC", "CA", "ATEW", "SFCQTA"};
+		String skill ="CBD";
+		String[] skill_trees = {"C", "D", "CB", "BDA"};
 		System.out.println(solution(skill, skill_trees));
 	}
 
@@ -33,12 +33,16 @@ public class 스킬트리 {
 					possible = false;
 					break;
 				}
+			}
+			if(index.size()>0) {
 				if(index.get(0)!=0) {
 					possible = false;
-					break;
 				}
 			}
+			
+			
 			if(possible == true) {
+				System.out.println(index);
 				answer++;
 			}
 			
