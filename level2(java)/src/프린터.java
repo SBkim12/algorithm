@@ -32,7 +32,7 @@ public class 프린터 {
         	boolean have = false;
         	for(int i=now+1; i<10; i++) {
         		if(stack.contains(i)==true) {
-        			System.out.println("값이 있음");
+//        			System.out.println("값이 있음");
         			have = true;
         			break;
         		}
