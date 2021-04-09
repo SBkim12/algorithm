@@ -19,5 +19,4 @@ public class 숫자의표현 {
 	        return answer;
 	    }
 	}
-
 }
