@@ -3,7 +3,7 @@ package 프로그래머스_월간_코드_챌린지_시즌2;
 public class level2 {
 
 	public static void main(String[] args) {
-		String s = "[[";
+		String s = "[(])";
 
 		System.out.println(solution(s));
 	}
@@ -22,6 +22,7 @@ public class level2 {
 			int a = 0;
 			int b = 0;
 			int c = 0;
+			System.out.println(s);
 			for (int j = 0; j < s.length(); j++) {
 				if (s.charAt(j) == '[') {
 					c++;
@@ -50,6 +51,7 @@ public class level2 {
 				}
 			}
 			if (pass == true & a==0 & b==0 & c==0) {
+				System.out.println("통과");
 				answer++;
 			}
 		}
