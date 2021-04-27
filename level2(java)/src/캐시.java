@@ -11,7 +11,8 @@ public class 캐시 {
 	static final int cache_hit = 1;
 	static final int cache_miss = 5;
 	
-	//탐색 또는 정렬을 자주 하는 경우엔 ArrayList을 사용하고 데이터의 추가/삭제가 많은 경우 LinkedList를 사용하는 것이 좋습니다
+	// 탐색 또는 정렬을 자주 하는 경우엔 ArrayList을 사용
+	// 데이터의 추가/삭제가 많은 경우 LinkedList를 사용하는 것이 좋습니다
 	public static int solution(int cacheSize, String[] cities) {
 		if(cacheSize == 0) return 5 * cities.length;
 		
