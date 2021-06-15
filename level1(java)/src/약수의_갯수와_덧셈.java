@@ -1,6 +1,5 @@
 
 public class ¾à¼öÀÇ_°¹¼ö¿Í_µ¡¼À {
-
 	public static void main(String[] args) {
 
 		int left = 1;
